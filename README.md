@@ -1,5 +1,12 @@
 # Angular17Calculator
 
+This project is a basic calculator created using the Angular framework. 
+
+Angular Material with indigo-pink theme has been utilized for the user interface to provide a visually appealing and interactive experience. 
+This combination of technologies ensures that the calculator is not only functional but also features a modern and engaging design.
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
 ## Development server
