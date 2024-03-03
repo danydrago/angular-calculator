@@ -1,0 +1,42 @@
+<form class="calc-form">
+  <table id="calc_table">
+    <tbody>
+      <tr>
+        <td colspan="4" class="calc_input_td">
+          <div class="calc_input_div">
+            <input matInput class="calc_input" value="{{show_operation}}" title="calculate" disabled>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><button mat-raised-button color="accent" (click)="pressNum('7')">7</button></td>
+        <td><button mat-raised-button color="accent" (click)="pressNum('8')">8</button></td>
+        <td><button mat-raised-button color="accent" (click)="pressNum('9')">9</button></td>
+        <td><button mat-stroked-button color="accent" (click)="pressOperator('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button mat-raised-button color="accent" (click)="pressNum('4')">4</button></td>
+        <td><button mat-raised-button color="accent" (click)="pressNum('5')">5</button></td>
+        <td><button mat-raised-button color="accent" (click)="pressNum('6')">6</button></td>
+        <td><button mat-stroked-button color="accent" (click)="pressOperator('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button mat-raised-button color="accent" (click)="pressNum('1')">1</button></td>
+        <td><button mat-raised-button color="accent" (click)="pressNum('2')">2</button></td>
+        <td><button mat-raised-button color="accent" (click)="pressNum('3')">3</button></td>
+        <td><button mat-stroked-button color="accent" (click)="pressOperator('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button mat-raised-button color="accent" (click)="pressNum('0')">0</button></td>
+        <td><button mat-raised-button color="accent" (click)="pressOperator('.')">.</button></td>
+        <td><button mat-raised-button color="accent" (click)="clear()">C</button></td>
+        <td><button mat-stroked-button color="accent" (click)="pressOperator('/')">/</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button class="buttoninput" mat-raised-button (click)="allClear()">Clear</button></td>
+        <td colspan="2"><button class="buttoninput" mat-raised-button color="primary" (click)="getAnswer()">=</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
